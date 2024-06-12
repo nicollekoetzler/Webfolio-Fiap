@@ -12,12 +12,18 @@ function Sobre() {
       <Container>
         <Info>
           <Left>
-            <h1>Eaí! Me chamo João Silva.</h1>
-            <p>
-              Seja bem vindo ao meu WebFólio! Sou Desenvolvedor FullStack com 2
-              anos de experiência e viciado em café!
-            </p>
-            <p>Meu Endereço: CEP 89280-460</p>
+            <StyledH1>
+              Eaí! Me chamo <br /><span>J</span>oão <span>S</span>ilva.
+            </StyledH1>
+            <StyledP>
+              Seja bem vindo ao meu WebFólio! <br />Sou Desenvolvedor FullStack com 2
+              anos<br /> de experiência e viciado em café!
+            </StyledP>
+            <StyledP>
+              Meu Endereço: <br />
+              Rua das Flores, 123 <br />
+              CEP: 89280-460
+            </StyledP>
             <Botao
               background="#E07C20"
               color="white"
@@ -30,7 +36,7 @@ function Sobre() {
             </Botao>
           </Left>
           <Right>
-            <img src={joaoImage} alt="Joao Silva" />
+            <Image src={joaoImage} alt="Joao Silva" />
           </Right>
         </Info>
         <OtherPages>
@@ -40,12 +46,16 @@ function Sobre() {
             botaoTexto="Veja mais"
             to="/formacao"
           />
+        </OtherPages>
+        <OtherPages>
           <ComponentePersonalizado
             titulo="Minha Experiência"
             texto="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
             botaoTexto="Veja mais"
             to="/experiencia"
           />
+        </OtherPages>
+        <OtherPages>
           <ComponentePersonalizado
             titulo="Meus Hobbies"
             texto="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
@@ -57,6 +67,26 @@ function Sobre() {
     </Section>
   );
 }
+
+const StyledH1 = styled.h1`
+  font-family: 'Dm Sans', sans-serif;
+  font-size: 60px;
+  color: #181717;
+  margin: 20px 0;
+  text-align: left;
+  /*nao ta funfando<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+  span {
+    color: orange;
+  }
+`;
+
+const StyledP = styled.p`
+  font-family: 'Dm Sans', sans-serif;
+  font-size: 32px; 
+  color: #606060;
+  margin: 10px 0;
+  text-align: left;
+`;
 
 const Section = styled.div`
   background: #f3f3f3;
@@ -71,28 +101,41 @@ const Container = styled.div`
   max-width: 100vw;
   display: flex;
   justify-content: center;
-  display: flex;
   flex-direction: column;
 `;
 
 const Info = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px; /* Padding para espaço interno */
 `;
 
 const Left = styled.div`
-  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 144px; /* Espaçamento da borda esquerda */
+  flex: 1;
 `;
 
 const Right = styled.div`
-  background-color: red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex: 1;
+`;
+
+const Image = styled.img`
+  width: 421px;
+  height: 588px; 
 `;
 
 const OtherPages = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
 `;
 
 export default Sobre;
