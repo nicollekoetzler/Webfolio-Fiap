@@ -1,22 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import joaoImage from "./assets/joaoimage.webp";
-import "./App.css";
+import Header from "../../components/Header/header";
+import joaoImage from "../../assets/joaoimage.webp";
 
-function App() {
+function Hobbies() {
   return (
     <Section>
+      <Header />
       <Container>
         <Left>
-          <h1>Eaí! Me chamo João Silva.</h1>
-          <p>Seja bem vindo ao meu WebFólio!
-          Sou Desenvolvedor FullStack com 2 anos de experiência e viciado em café!</p>
-          <p>Meu Endereço:
-          CEP 89280-460</p>
+          <h1>Hobbies.</h1>
           <Button>Veja Mais</Button>
         </Left>
         <Right>
-        <img src={joaoImage} alt="Joao Silva" />
+          <img src={joaoImage} alt="Joao Silva" />
         </Right>
       </Container>
     </Section>
@@ -25,19 +22,23 @@ function App() {
 
 const Section = styled.div`
   background: #f3f3f3;
-  height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  padding: 0px;
 `;
 
 const Container = styled.div`
-  max-width: 1200px;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
+  display: flex;
+  flex-direction: row;
 `;
 
 const Left = styled.div`
+  background-color: purple;
 `;
 
 const Title = styled.h1`
@@ -46,13 +47,14 @@ const Title = styled.h1`
 `;
 
 const Right = styled.div`
+  background-color: red;
 `;
 
 const Button = styled.button`
-  background: #E07C20;
+  background: #e07c20;
   border: none;
   padding: 10px 20px;
   color: white;
 `;
 
-export default App;
+export default Hobbies;
