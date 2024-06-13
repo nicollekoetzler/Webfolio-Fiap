@@ -1,25 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import jslogo from "../../assets/jslogo.png";
 
 function Header() {
   return (
-    <HeaderContainer>
+    <FooterContainer>
       <LogoContainer>
-        <img src={jslogo} alt="Logo JS" />
+        <StyledLink to="/">2024</StyledLink>
       </LogoContainer>
-      <PagesContainer>
-        <StyledLink to="/">Sobre</StyledLink>
-        <StyledLink to="/formacao">Formação</StyledLink>
-        <StyledLink to="/experiencia">Experiência</StyledLink>
-        <StyledLink to="/hobbies">Hobbies</StyledLink>
-      </PagesContainer>
-    </HeaderContainer>
+      <Social>
+        <StyledLink to="/experiencia">LinkedIn</StyledLink>
+        <StyledLink to="/hobbies">Instagram</StyledLink>
+      </Social>
+    </FooterContainer>
   );
 }
 
-const HeaderContainer = styled.div`
+const FooterContainer = styled.div`
   color: white;
   padding: 0px;
   display: flex;
@@ -27,16 +24,17 @@ const HeaderContainer = styled.div`
   top: 0;
   width: 100%;
   justify-content: space-around;
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 `;
 
 const LogoContainer = styled.div`
-  justify-content: center;
-  align-content: center;
+  display: flex;
+  gap: 16px;
+  padding: 0px;
 `;
 
-const PagesContainer = styled.div`
+const Social = styled.div`
   display: flex;
   gap: 16px;
   padding: 0px;

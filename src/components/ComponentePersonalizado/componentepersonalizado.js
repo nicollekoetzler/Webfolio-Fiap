@@ -33,17 +33,20 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 168px;
   width: 70vw;
 `;
 
 const Titulo = styled.h2`
   margin-bottom: 10px;
   text-decoration: underline;
+  font-weight: 500;
 `;
 
 const Texto = styled.p`
   margin-bottom: 10px;
+  font-weight: 400;
 `;
 
 export default ComponentePersonalizado;
