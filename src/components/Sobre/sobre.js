@@ -45,7 +45,7 @@ function Sobre() {
         <OtherPages>
           <ComponentePersonalizado
             titulo="Minha formação"
-            texto="definitivamente um texto que existe"
+            texto="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
             botaoTexto="Veja mais"
             to="/formacao"
           />
@@ -90,7 +90,8 @@ const StyledH1 = styled.h1`
   margin: 20px 0;
   text-align: left;
   span {
-    color: orange;
+    padding: 0 4px 4px 4px;
+    background: #E07C20;
   }
 `;
 
@@ -158,6 +159,7 @@ const OtherPages = styled.div`
   flex-direction: column;
   padding-top: 10px;
   padding-bottom: 10px;
+  justify-content: space-between;
 `;
 
 const Email = styled.div`
