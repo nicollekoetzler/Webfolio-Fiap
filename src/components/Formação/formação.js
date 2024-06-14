@@ -1,13 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import Footer from "../Footer/footer";
 import Header from "../../components/Header/header";
-import joaoImage from "../../assets/joaoimage.webp";
+import enganharia from "../../assets/engenharia.jpeg";
+import computacao from "../../assets/computacao.jpeg";
 import FotoComInfo from "../FotoComInfo/fotocominfo";
 
 function Formação() {
   return (
     <Section>
       <Header />
+      <Left>
+            <StyledH1>
+              Minha <br />
+              <span>F</span>ormação.
+            </StyledH1>
+            <StyledP>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+            </StyledP>
+          </Left>
       <Container>
         <FotoComInfo
           title="Engenharia"
@@ -15,6 +26,7 @@ function Formação() {
           text="Main text of the example, which can be lengthy."
           additionalText="Qualquer coisa."
           buttonText="Veja Mais"
+          imageUrl={enganharia} alt="Engenharia"
         />
         <BorderedTop />
 
@@ -24,8 +36,10 @@ function Formação() {
           text="Main text of the example, which can be lengthy."
           additionalText="Odeio Java"
           buttonText="Veja Mais"
+          imageUrl={computacao} alt="Computação"
         />
       </Container>
+      <Footer />
     </Section>
   );
 }
@@ -45,31 +59,46 @@ const Container = styled.div`
   justify-content: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 90px;
 `;
 
-const Left = styled.div`
-  background-color: purple;
-`;
-
-const Title = styled.h1`
-  font-size: 60px;
-  color: #181717;
-`;
-
-const Right = styled.div`
-  background-color: red;
-`;
-
-const Button = styled.button`
-  background: #e07c20;
-  border: none;
-  padding: 10px 20px;
-  color: white;
-`;
 const BorderedTop = styled.div`
   width: 80%;
   border-top: 2px solid #000;
   margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+`;
+
+const Left = styled.div`
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 168px;
+  width: 70vw;
+  gap: 150px;
+`;
+
+const StyledH1 = styled.h1`
+  font-family: "Dm Sans", sans-serif;
+  font-size: 60px;
+  color: #181717;
+  margin: 20px 0;
+  text-align: left;
+  span {
+    padding: 0 4px 4px 4px;
+    background: #E07C20;
+  }
+`;
+
+const StyledP = styled.p`
+  font-family: "Dm Sans", sans-serif;
+  font-size: 32px;
+  color: #606060;
+  margin: 10px 0;
+  text-align: left;
+  padding-top: 40px;
 `;
 
 export default Formação;
