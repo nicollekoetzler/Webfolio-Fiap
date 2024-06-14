@@ -35,13 +35,14 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-left: 168px;
-  width: 70vw;
+  width: 79vw;
 `;
 
 const Titulo = styled.h2`
   margin-bottom: 10px;
   text-decoration: underline;
   font-weight: 500;
+  padding-right: 20px;
 `;
 
 const Texto = styled.p`
