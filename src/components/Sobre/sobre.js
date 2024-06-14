@@ -138,6 +138,7 @@ const Left = styled.div`
   align-items: flex-start;
   padding-left: 144px;
   flex: 1;
+  
 `;
 
 const Right = styled.div`
