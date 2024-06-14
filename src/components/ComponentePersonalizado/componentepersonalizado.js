@@ -42,6 +42,7 @@ const Titulo = styled.h2`
   margin-bottom: 10px;
   text-decoration: underline;
   font-weight: 500;
+  padding-right: 20px;
 `;
 
 const Texto = styled.p`

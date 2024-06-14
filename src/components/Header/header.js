@@ -29,6 +29,7 @@ const HeaderContainer = styled.div`
   justify-content: space-around;
   padding-top: 100px;
   padding-bottom: 200px;
+  gap: 950px;
 `;
 
 const LogoContainer = styled.div`
@@ -38,7 +39,7 @@ const LogoContainer = styled.div`
 
 const PagesContainer = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 26px;
   padding: 0px;
 `;
 
