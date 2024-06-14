@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "../Footer/footer";
 import Header from "../../components/Header/header";
-import enganharia from "../../assets/engenharia.jpeg";
-import computacao from "../../assets/computacao.jpeg";
+import enganharia from "../../assets/experiencia1.jpg";
+import computacao from "../../assets/experiencia2.jpg";
 import FotoComInfo from "../FotoComInfo/fotocominfo";
 
 function Experiência() {
@@ -11,30 +11,30 @@ function Experiência() {
     <Section>
       <Header />
       <Left>
-            <StyledH1>
-              Minha <br />
-              <span>E</span>xperiência.
-            </StyledH1>
-            <StyledP>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
-            </StyledP>
-          </Left>
+        <StyledH1>
+          Minha <br />
+          <span>E</span>xperiência.
+        </StyledH1>
+        <StyledP>
+          Desenvolvedor Full Stack.
+        </StyledP>
+      </Left>
       <Container>
         <FotoComInfo
-          title="Engenharia"
-          subtitle="Subtítulo"
-          text="Main text of the example, which can be lengthy."
-          additionalText="Qualquer coisa."
+          title="DEV Fullstack"
+          subtitle="Tech Solutions Inc."
+          text="Trabalhei como Desenvolvedor Full Stack na Tech Solutions Inc, onde fui responsável pelo desenvolvimento de aplicações web robustas e escaláveis. Minha função incluía a implementação de funcionalidades front-end utilizando React e a criação de APIs RESTful com Node.js. Colaborei estreitamente com designers e gerentes de produto para entregar soluções que atendessem às necessidades dos clientes."
+          additionalText=""
           buttonText="Veja Mais"
           imageUrl={enganharia} alt="Engenharia"
         />
         <BorderedTop />
 
         <FotoComInfo
-          title="Computação"
-          subtitle="Sim."
-          text="Main text of the example, which can be lengthy."
-          additionalText="Odeio Java"
+          title="Engenheiro de Software"
+          subtitle="Apple Inc."
+          text="Atuei como Engenheiro de Software na Apple Inc., focando em desenvolvimento de sistemas críticos e de alta performance. Trabalhei em projetos que exigiam análise profunda de requisitos, design de arquiteturas complexas e otimização de performance. Utilizei metodologias ágeis para garantir entregas contínuas e de alta qualidade."
+          additionalText=""
           buttonText="Veja Mais"
           imageUrl={computacao} alt="Computação"
         />

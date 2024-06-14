@@ -3,8 +3,8 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "../Footer/footer";
 import Header from "../../components/Header/header";
-import enganharia from "../../assets/engenharia.jpeg";
-import computacao from "../../assets/computacao.jpeg";
+import enganharia from "../../assets/academia.jpg";
+import computacao from "../../assets/cinema.jpg";
 import FotoComInfo from "../FotoComInfo/fotocominfo";
 
 function Hobbies() {
@@ -12,30 +12,30 @@ function Hobbies() {
     <Section>
       <Header />
       <Left>
-            <StyledH1>
-              Meus <br />
-              <span>H</span>obbies.
-            </StyledH1>
-            <StyledP>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
-            </StyledP>
-          </Left>
+        <StyledH1>
+          Meus <br />
+          <span>H</span>obbies.
+        </StyledH1>
+        <StyledP>
+          Fitness, Filmes e Séries: Paixões que Movem.
+        </StyledP>
+      </Left>
       <Container>
         <FotoComInfo
-          title="Engenharia"
-          subtitle="Subtítulo"
-          text="Main text of the example, which can be lengthy."
-          additionalText="Qualquer coisa."
+          title="Academia"
+          subtitle=""
+          text="Frequentar a academia é uma parte essencial da minha rotina diária. Gosto de treinar tanto musculação quanto exercícios aeróbicos, sempre buscando melhorar minha saúde e condicionamento físico. A disciplina e o foco necessários para seguir uma rotina de exercícios me ajudam a manter um estilo de vida saudável e equilibrado."
+          additionalText=""
           buttonText="Veja Mais"
           imageUrl={enganharia} alt="Engenharia"
         />
         <BorderedTop />
 
         <FotoComInfo
-          title="Computação"
-          subtitle="Sim."
-          text="Main text of the example, which can be lengthy."
-          additionalText="Odeio Java"
+          title="Assistir Séries e Filmes"
+          subtitle=""
+          text="Assistir séries e filmes é uma das minhas atividades favoritas nos momentos de lazer. Gosto de explorar uma ampla variedade de gêneros, desde dramas intensos e comédias leves até documentários informativos e thrillers emocionantes. Apreciar a arte do cinema e da televisão me proporciona entretenimento e uma forma de relaxamento. Além disso, gosto de discutir e analisar os enredos e personagens com amigos e familiares, tornando a experiência ainda mais enriquecedora."
+          additionalText=""
           buttonText="Veja Mais"
           imageUrl={computacao} alt="Computação"
         />

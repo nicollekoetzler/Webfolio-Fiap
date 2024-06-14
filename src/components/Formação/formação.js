@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Footer from "../Footer/footer";
 import Header from "../../components/Header/header";
-import enganharia from "../../assets/engenharia.jpeg";
+import enganharia from "../../assets/codigo.jpg";
 import computacao from "../../assets/computacao.jpeg";
 import FotoComInfo from "../FotoComInfo/fotocominfo";
 
@@ -11,30 +11,30 @@ function Formação() {
     <Section>
       <Header />
       <Left>
-            <StyledH1>
-              Minha <br />
-              <span>F</span>ormação.
-            </StyledH1>
-            <StyledP>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
-            </StyledP>
-          </Left>
+        <StyledH1>
+          Minha <br />
+          <span>F</span>ormação.
+        </StyledH1>
+        <StyledP>
+          Engenharia de Software.
+        </StyledP>
+      </Left>
       <Container>
         <FotoComInfo
           title="Engenharia"
-          subtitle="Subtítulo"
-          text="Main text of the example, which can be lengthy."
-          additionalText="Qualquer coisa."
+          subtitle="FIAP"
+          text="Pós-graduado em Engenharia de Software pela Faculdade de Informática e Administração Paulista (FIAP), com ênfase em metodologias ágeis e gestão de projetos. Adquiri habilidades avançadas em análise de requisitos, arquitetura de software e qualidade de código, sempre buscando a excelência na entrega de produtos tecnológicos."
+
           buttonText="Veja Mais"
           imageUrl={enganharia} alt="Engenharia"
         />
         <BorderedTop />
 
         <FotoComInfo
-          title="Computação"
-          subtitle="Sim."
-          text="Main text of the example, which can be lengthy."
-          additionalText="Odeio Java"
+          title="Data Science"
+          text="Mestre em Data Science pela Faculdade de Informática e Administração Paulista (FIAP). A formação abrangeu o estudo aprofundado de machine learning, big data e estatística aplicada. Realizei projetos de análise de dados em larga escala, ajudando empresas a tomar decisões informadas com base em insights extraídos de grandes volumes de dados."
+          subtitle="FIAP"
+          additionalText=""
           buttonText="Veja Mais"
           imageUrl={computacao} alt="Computação"
         />
